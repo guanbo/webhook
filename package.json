@@ -1,0 +1,25 @@
+{
+  "name": "webhook",
+  "version": "1.0.0",
+  "description": "web hook",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "should": "^11.1.1",
+    "should-http": "0.0.4",
+    "superagent": "^2.3.0",
+    "superagent-prefix": "0.0.2"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test"
+  },
+  "keywords": [
+    "web",
+    "hook"
+  ],
+  "author": "guanbo",
+  "license": "ISC"
+}
