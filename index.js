@@ -5,10 +5,11 @@ var app = module.exports = express()
 
 app.get('/apps/:app', function (req, res) {
   var action = req.query.action||'deploy'
+  console.log(new Date().toLocaleString(), req.params.app, action);
   exec(__dirname+'/bin/'+action+'.sh '+req.params.app, function () {
     console.log(arguments);
-    res.sendStatus(200);
   })
+  res.sendStatus(200);
 })
 
 app.start = function () {
