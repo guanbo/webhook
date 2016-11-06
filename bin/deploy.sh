@@ -6,7 +6,7 @@ APP=$1
 TAG=$2
 
 # cleanup
-cleanup.sh ${APP}
+./cleanup.sh ${APP}
 
 # login docker hub
 docker login --username=${DOCKER_USERNAME} --password=${DOCKER_PASSWORD} ${REGISTRY}
