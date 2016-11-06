@@ -9,7 +9,7 @@ TAG=$2
 cleanup.sh ${APP}
 
 # login docker hub
-docker login --username=${DOCKER_UERNAME} --password=${DOCKER_PASSWORD} ${REGISTRY}
+docker login --username=${DOCKER_USERNAME} --password=${DOCKER_PASSWORD} ${REGISTRY}
 
 # start container
 ../apps/${APP}/startup.sh $TAG
